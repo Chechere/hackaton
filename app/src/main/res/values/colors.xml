@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fondo">#1B434D</color>
+    <color name="morado">#E6DEF6</color>
+    <color name="amarillo">#FAF3EB</color>
+    <color name="amarillo2">#FFFFF0</color>
+    <color name="verde">#EAFAEF</color>
+    <color name="verde2">#77DD77</color>
+    <color name="azul">#BDE0FE</color>
+    <color name="rojo">#FF6961</color>
+    <color name="rojo2">#FFB3BA</color>
+    <color name="texto_aviso_dispositivo">#1A237E</color>
+</resources>

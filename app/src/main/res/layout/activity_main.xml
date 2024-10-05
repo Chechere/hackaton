@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ButtonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonBluetooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DeviceState">
+
+        <com.hackaton2024.wiliwilowilu.MyButton
+            android:id="@+id/sensor6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:bgColor="@color/amarillo2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sensor5"
+            app:layout_constraintTop_toBottomOf="@+id/sensor4"
+            app:sensorName="@string/sensor_6_name" />
+
+        <com.hackaton2024.wiliwilowilu.MyButton
+            android:id="@+id/sensor5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:bgColor="@color/rojo2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sensor6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sensor3"
+            app:sensorName="@string/sensor_5_name" />
+
+        <com.hackaton2024.wiliwilowilu.MyButton
+            android:id="@+id/sensor4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:bgColor="@color/azul"
+            app:layout_constraintBottom_toTopOf="@+id/sensor6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sensor3"
+            app:layout_constraintTop_toBottomOf="@+id/sensor2"
+            app:sensorName="@string/sensor_4_name"
+            app:usePercentage="true"/>
+
+        <com.hackaton2024.wiliwilowilu.MyButton
+            android:id="@+id/sensor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:bgColor="@color/verde"
+            app:layout_constraintBottom_toTopOf="@+id/sensor5"
+            app:layout_constraintEnd_toStartOf="@+id/sensor4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sensor1"
+            app:sensorName="@string/sensor_3_name"
+            app:usePercentage="true"/>
+
+        <com.hackaton2024.wiliwilowilu.MyButton
+            android:id="@+id/sensor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:bgColor="@color/amarillo"
+            app:layout_constraintBottom_toTopOf="@+id/sensor4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sensor1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:sensorName="@string/sensor_2_name" />
+
+        <com.hackaton2024.wiliwilowilu.MyButton
+            android:id="@+id/sensor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:bgColor="@color/morado"
+            app:layout_constraintBottom_toTopOf="@+id/sensor3"
+            app:layout_constraintEnd_toStartOf="@+id/sensor2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:sensorName="@string/sensor_1_name">
+
+        </com.hackaton2024.wiliwilowilu.MyButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/DeviceState"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/rojo"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/bluetooth_disconnected_text"
+        android:textAlignment="center"
+        android:textColor="@color/texto_aviso_dispositivo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ButtonBluetooth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/white"
+        android:contentDescription="@string/button_bluetooth_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonNASA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ButtonNASA"
+        app:srcCompat="@drawable/baseline_bluetooth_48" />
+
+    <ImageButton
+        android:id="@+id/ButtonNASA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:background="@color/white"
+        android:contentDescription="@string/button_NASA_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ButtonBluetooth"
+        app:srcCompat="@drawable/baseline_rss_feed_48" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

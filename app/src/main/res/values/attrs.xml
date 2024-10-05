@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyButton">
+        <attr name="bgColor" format="color"/>
+        <attr name="sensorName" format="string"/>
+        <attr name="usePercentage" format="boolean"/>
+    </declare-styleable>
+</resources>

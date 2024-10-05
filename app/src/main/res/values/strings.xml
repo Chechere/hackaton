@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Hackaton 2024</string>
+    <string name="button_more_info_text">Press for more info</string>
+    <string name="button_default_value">0.0</string>
+    <string name="button_default_name">Sensor</string>
+    <string name="bluetooth_disconnected_text">Device Disconnected</string>
+    <string name="bluetooth_connected_text">Device Connected</string>
+    <string name="button_bluetooth_description">Button with the image of bluetooth logo.</string>
+    <string name="button_NASA_description">Button with the logo of NASA\n</string>
+    <string name="bluetooth_et_hint">Bluetooth Device Name</string>
+
+    <string name="sensor_6_name">soil pH</string>
+    <string name="sensor_5_name">Luminosity (lux)</string>
+    <string name="sensor_4_name">Soil Humidity</string>
+    <string name="sensor_3_name">Air Humidty</string>
+    <string name="sensor_2_name">Temperature (ºC)</string>
+    <string name="sensor_1_name">Pressure (hPa)</string>
+
+    <string name="prefix_bt_device_name">YBOX_</string>
+    <string name="max_day_title">Maximum Day:</string>
+    <string name="graph_title">Graph (Measurements every 10s):</string>
+    <string name="graph_note">* The information may not be entirely accurate</string>
+    <string name="avg_day_title">Average Day:</string>
+    <string name="avg_week_title">Average Week:</string>
+    <string name="avg_month_title">Average Month:</string>
+    <string name="min_day_title">Minimum Day:</string>
+    <string name="graph_description">The image shows a graph of the data collected over the last 24 hours for the selected parameter.</string>
+    <string name="error_checking_active_bluetooth">There was an error while trying to enable Bluetooth and search for devices.</string>
+    <string name="action_connect_bluetooth">CONNECT BLUETOOTH</string>
+    <string name="bluetooth_serial_uid">00001101-0000-1000-8000-00805F9B34FB</string>
+
+
+    <string name="NASA_API_key">8a5eisWLyUEYYzhHRZFqBPKjdOd0FDewCbebDgdH</string>
+    <string name="OpenAQ_API_key">894cd8b6e15c7a20a1b0c100f999bb85a8423ad087f0548f6e27f235f5d5f56f</string>
+</resources>
