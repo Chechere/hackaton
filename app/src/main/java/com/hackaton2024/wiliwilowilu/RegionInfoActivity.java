@@ -70,11 +70,11 @@ public class RegionInfoActivity extends AppCompatActivity implements Notifier {
                 "&dim=0.1" + "&api_key=" + getString(R.string.NASA_API_key);
 
         String APIEONET = "https://eonet.gsfc.nasa.gov/api/v3/events?bbox=" +
-                "-129.02,50.73,-58.71,12.89";
-//                String.format(Locale.ENGLISH,"%.2f,", longitude - 1) +
-//                String.format(Locale.ENGLISH,"%.2f,", latitude + 1) +
-//                String.format(Locale.ENGLISH,"%.2f,", longitude + 1) +
-//                String.format(Locale.ENGLISH,"%.2f,", latitude - 1);
+                //"-129.02,50.73,-58.71,12.89";
+                String.format(Locale.ENGLISH,"%.2f,", longitude - 1) +
+                String.format(Locale.ENGLISH,"%.2f,", latitude + 1) +
+                String.format(Locale.ENGLISH,"%.2f,", longitude + 1) +
+                String.format(Locale.ENGLISH,"%.2f,", latitude - 1);
 
         String APIOpenAQ = "https://api.openaq.org/v1/measurements?coordinates=" +
                 String.format(Locale.ENGLISH,"%.2f,", latitude) +
